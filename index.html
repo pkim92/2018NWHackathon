@@ -4,12 +4,13 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+	<meta content="application/JSON">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./Style/stylesheet.css">
+    
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -17,13 +18,25 @@
 
 
     <title>HackMyCity</title>
+	
 </head>
 <body>
+<script>
+	var url = 'http://api.translink.ca/RTTIAPI/V1/stops/55612?apiKey=Kjm6QZhnGMwOj7kUtpLx';
 	
-
-  <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
+	fetch(url, {
+	mode: 'POST',
+    headers: new Headers({
+      'content-type': 'application/json',
+	  "Accept":"application/json"
+    })
+}).then(res => res.json())
+.then((out) => {
+	console.log('Checkout this JSON! ', out);});
+	</script>
+	<div>
+		<h1 id="output">Hello</h1>
+	<div>
 </body>
 
 </html>
