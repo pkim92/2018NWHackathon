@@ -35,7 +35,7 @@
 				function initMap() {
 					var locations = [
 					['Douglas', 49.203472, -122.912805],
-					['Columbia', 49.204983, -122.906089]
+					['Columbia', 49.204983, -122.906089],
 					];
 					var mapOptions = {
 						center: new google.maps.LatLng(49.203472, -122.912805),
@@ -52,7 +52,14 @@
 					icon: "transparentbike.png",
 					draggable: true
 					});
-				}
+				
+					google.maps.event.addListener(marker, 'click', (function(marker, i) {
+						return function() {
+							desc.setContent(locations[i][0]);
+							desc.open(map, marker);
+						}
+					})(marker, i));
+					}
 				}
 				
 			</script>
