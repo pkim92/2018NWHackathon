@@ -1,3 +1,11 @@
+<?php 
+session_start(); 
+if (!isset($_SESSION["authenticated"])){
+	header("Location: login.php"); 
+    die();
+}
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -21,7 +29,7 @@
 	<body>
 	
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row" id="header">
 				<div class="col-2">
 					<img src="logo.png" alt="Bike2Go logo"/>
 				</div>
@@ -29,7 +37,7 @@
 		</div>
 	
 	<div class="container-fluid">
-		<div class="row">	   
+		<div class="row" id = "main">	   
 			<div id="map"></div>
 			<script>
 				function initMap() {
@@ -78,6 +86,14 @@
 		</script>
             </div>
 		</div> 
+		</br>
+		<div class = "container-fluid">
+			<div class = "row" id="bottom">
+				<div class = "col-8">
+					<button class="link">Bike 1</button>
+				</div>
+			</div>
+		</div>
 	</div>
   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

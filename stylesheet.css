@@ -4,3 +4,12 @@
 		margin:0 auto 0 auto;
 		
        }
+#main {
+	background-color: #bdd9fc;
+}
+#userID {
+	font-family: Bauhaus 93; 
+}
+#password {
+	font-family: Bauhaus 93;
+}
