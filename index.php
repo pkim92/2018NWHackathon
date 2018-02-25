@@ -73,7 +73,7 @@ if (!isset($_SESSION["authenticated"])){
 							window.setTimeout(function() {desc.close(map, marker);}, 2000);
 							map.setZoom(17);
 							map.setCenter(marker.getPosition());
-							window.setTimeout(function() {map.setZoom(13);}, 2000);
+							window.setTimeout(function() {map.setZoom(14);}, 2000);
 						}
 						
 					})(marker, i));
@@ -327,7 +327,9 @@ new google.maps.LatLng(49.1950547457799, -122.951897901374)
         geodesic: false,
         strokeColor: '#FF0000',
         strokeOpacity: 1.0,
-        strokeWeight: 2
+        strokeWeight: 2,
+        fillColor:'#FF0000',
+        fillOpacity:0.0
     });
     pathToCenter.setMap(map);
 }
