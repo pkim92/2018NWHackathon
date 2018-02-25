@@ -3,8 +3,9 @@ body {
 	background-color: #e0ecff;
 }
 
-.header {
+#header {
 	font-style: italic;
+    background-color: white;
 }
 
 .tile {
@@ -39,10 +40,12 @@ button {
 	background-color: #bdd9fc;
 }
 #userID {
-	font-family: Bauhaus 93; 
+	font: "Bauhaus 93"; 
 }
 #password {
-	font-family: Bauhaus 93;
-}
+	font: "Bauhaus 93";
 		border-radius: 15px;
-       }
+}
+#bottom {
+    font: "Bauhaus 93";
+}

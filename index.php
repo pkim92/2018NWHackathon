@@ -338,13 +338,9 @@ new google.maps.LatLng(49.1950547457799, -122.951897901374)
             </div>
 		</div> 
 		</br>
-		<div class = "container-fluid">
-			<div class = "row" id="bottom">
-				<div class = "col-8">
-					<button class="link">Bike 1</button>
-				</div>
-			</div>
-		</div>
+		<div class = "container-fluid" id="bottom">
+			
+		
 		<br/><h1 class="text-center header">Bikes Available at Major Hubs</h1><br/>
 	<div class="grid text-center">
 		<div class="row col-md-12">
@@ -374,6 +370,7 @@ new google.maps.LatLng(49.1950547457799, -122.951897901374)
 			</div>
 		</div>
 	</div>
+    </div>
 	<br/>
 	<br/>
 	<div class="btn-success text-center" id="ClaimButton">

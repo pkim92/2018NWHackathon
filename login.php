@@ -1,6 +1,6 @@
 <?php
 session_start();
-$loginError = $_GET['message'];
+//$loginError = $_GET['message'];
 ?>
 
 <!doctype html>
