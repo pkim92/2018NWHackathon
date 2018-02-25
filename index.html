@@ -18,7 +18,7 @@
 
     <title>HackMyCity</title>
 </head>
-<body>
+	<body>
 	
 		<div class="container-fluid">
 			<div class="row">
@@ -38,9 +38,12 @@
 				  zoom: 17,
 				  center: newwest
 					});
+					var image = "transparentbike.png";
 					var marker = new google.maps.Marker({
+				  icon: image,
 				  position: newwest,
-				  map: map
+				  map: map,
+				  draggable: true
 					});
 				}
 			</script>
