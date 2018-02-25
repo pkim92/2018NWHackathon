@@ -347,7 +347,7 @@ new google.maps.LatLng(49.1950547457799, -122.951897901374)
 	<div class="grid text-center">
 		<div class="row col-md-12">
 			<div class="tile tile-clouds col-md-4 col-sm-6 col-xs-12">
-				<h2>New West Skytrain Skytrain Station</h2>
+				<h2>New West Skytrain Station</h2>
 				<h5>New Westminister, BC, V3M 1B9</h5>
 				<a href="#claimBike"><div class="progress">
 					<div class="progress-bar bg-success" role="progressbar" style="width: 65%">5 available</div>
