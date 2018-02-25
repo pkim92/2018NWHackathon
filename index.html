@@ -36,10 +36,15 @@
 					var locations = [
 					['Douglas', 49.203472, -122.912805],
 					['Columbia', 49.204983, -122.906089],
+					['New Westminster Station', 49.201421, -122.912438],
+					['River Market', 49.200313, -122.911172],
+					['Museum', 49.207379, -122.912255],
+					['Walmart', 49.211829, -122.923060],
+					['Massey Theatre', 49.215059, -122.927195]
 					];
 					var mapOptions = {
 						center: new google.maps.LatLng(49.203472, -122.912805),
-						zoom: 15,
+						zoom: 14,
 						mapTypeId: google.maps.MapTypeId.ROADMAP
 					 }
 					var map = new google.maps.Map(document.getElementById('map'), mapOptions);	
@@ -57,7 +62,12 @@
 						return function() {
 							desc.setContent(locations[i][0]);
 							desc.open(map, marker);
+							window.setTimeout(function() {desc.close(map, marker);}, 2000);
+							map.setZoom(17);
+							map.setCenter(marker.getPosition());
+							window.setTimeout(function() {map.setZoom(13);}, 2000);
 						}
+						
 					})(marker, i));
 					}
 				}
