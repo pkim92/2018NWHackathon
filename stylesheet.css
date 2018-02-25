@@ -18,23 +18,19 @@ body {
 }
 
 #ClaimButton {
-	width: 12%;
-	height: 150%;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 50px;
+	width: 25%;
+	height: 100%;
+	margin-left: 70%;
+	margin-right: center;
+	border-radius: 50%;
 }
 #LogOutButton {
-	width: 12%;
-	height: 150%;
-	margin-left: auto;
+	width: 25%;
+	height: 100%;
+	margin-left: center;
 	margin-right: auto;
-	border-radius: 50px;
-}
-
-button {
-	margin-left: auto;
-	margin-right: auto;
+	border-radius: 50%;
+     
 }
 
 #map {
@@ -54,4 +50,7 @@ button {
 }
 #bottom {
     font: "Bauhaus 93";
+}
+#logout {
+    color: white;
 }

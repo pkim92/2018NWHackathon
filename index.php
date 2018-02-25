@@ -375,12 +375,19 @@ new google.maps.LatLng(49.1950547457799, -122.951897901374)
     </div>
 	<br/>
 	<br/>
+    <div class="row">
+        <div class="col-6">
 	<div class="btn-success text-center" id="ClaimButton">
 		<h2 id="claimBike">Claim Bike</h2>
 	</div>
-    <a href="logout.php"><div class="btn-danger text-center" id="LogOutButton">
-        <h2 id="logOut">Log Out</h2>
-    </div></a>
+        </div>
+        <div class="col-6">
+    <button class="btn-danger text-center" id="LogOutButton"><a href="logout.php">
+        <h2 id="logout">Log Out</h2>
+        </a>
+        </button>
+        </div>
+    </div>
 	<br/><br/><br/><br/><br/>
   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
