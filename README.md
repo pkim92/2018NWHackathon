@@ -15,7 +15,7 @@ Hack Our City was a two-day hackathon event hosted by Amazon Vancouver, Translin
    <ul>The border of New Westminster was drawn in the map using City Boundaries API provided by ODEN</ul>
    
    * [Google Maps API](https://developers.google.com/maps/)
-   * [ODEN] 
+   * [ODEN](https://opendatadev.net/search-type)
    
 ## Deployment 
   
